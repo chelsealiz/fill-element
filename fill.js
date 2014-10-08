@@ -1,8 +1,8 @@
 /*
  * Sets width on an element to the percentage indicated in the arguments, also has a padding option
- * v.
- * Built by Chelsea....
- * Github: link
+ * v. 1.0
+ * Built by Chelsea Overstreet
+ * Github: github.com/overstreetce/fill-element
  *
  */
 (function($){
@@ -21,14 +21,14 @@
             var self = $(this);
             var width;
             var parent = self.parent();
-            //Sets the full width of the element based on the values set
+            // Sets the full width of the element based on the values set
             if(settings.percentage === 100){
                 width = parent.width();
             }
             else if(settings.percentage!=0){
                 width = (parent.width())*(settings.percentage/100);
             }
-            //Sets the width and margins using inline CSS
+            // Sets the width and margins using inline CSS
             if (width > 0) {
                 self.css("margin", settings.margin+"px");
                // self.css("text-overflow", "ellipsis")
