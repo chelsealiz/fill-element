@@ -31,7 +31,7 @@
             // Sets the width and margins using inline CSS
             if (width > 0) {
                 self.css("margin", settings.margin+"px");
-               // self.css("text-overflow", "ellipsis")
+               //self.css("text-overflow", "ellipsis")
                 self.css("width", width + "px");
             }
 
