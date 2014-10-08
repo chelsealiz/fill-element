@@ -1,6 +1,6 @@
 {
   "name": "fill-element",
-  "version": "0.0.0",
+  "version": "1.0",
   "authors": [
     "overstreetce <ceo4jq@virginia.edu>"
   ],
@@ -12,7 +12,6 @@
     "fill"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,5 +21,6 @@
   ],
   "dependencies": {
     "jQuery": "~2.1.1"
-  }
+  },
+  "homepage": "https://github.com/overstreetce/fill-element"
 }
