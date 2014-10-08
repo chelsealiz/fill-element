@@ -1,0 +1,55 @@
+body{
+    background:#00b3ee;
+}
+
+body p{
+    text-align:justify;
+}
+
+button{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+div{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.container{
+    width:90%;
+    padding:0 10px 10px 10px;
+    background-color: #fff;
+    margin:0 auto;
+}
+
+.jumbotron{
+    margin-left:-25px;
+    margin-right:-25px;
+    margin-top:-5px;
+}
+
+.Info-1{
+    float:left;
+}
+
+.Info-2{
+    float:right;
+}
+
+.ex1{
+    padding:15px;
+    background:#F0F0F0;
+}
+
+.a-row{
+    width:100%;
+}
+
+.textArea{
+    float:left;
+}
+
+.images{
+    float:right;
+}

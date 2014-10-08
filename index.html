@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fill-Element Demo</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap//dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Fill-Element Demo</h1>
+    <p>Welcome to the Fill-Element Demo. This page will demonstrate and explain how the Fill-Element plugin works. In other words, this is both a demo and a README together.</p>
+        <button type="button" id = "demo"class="btn btn-default">Read More &NestedGreaterGreater;</button>
+    </div>
+
+    <div class="a-row">
+        <div class="about">
+            <h1>About the Plugin</h1>
+            <p>This plugin allows users divs to fill the parent element. You can choose the percentage of fill on the element as well as what margins you want on the object.</p>
+        </div>
+    </div>
+<div class="a-row clearfix">
+    <div class = "Info-1 js-fill-45">
+        <h1>Usage</h1>
+        <p>To use this plugin, you simply download it. When adding it to the site, add the script as "src = "path/fill.js"</p>
+        <p>At the bottom of your page, add the following code:</p>
+        <p>$(document).ready(function(){</p>
+        <p> $("element").fill({margin,percentWidth});</p>
+        <p> });</p>
+    </div>
+    <div class = "Info-2 js-fill-45">
+        <h1>Resizing the Page</h1>
+        <p>If you want this function to resize elements when the window size changes, simply call the function in $(window).resize() underneath the $(document).ready section</p>
+        <div class="theInput">
+            <h3>Sample Input</h3>
+            <input type="text" class="form-control" placeholder="Text input">
+        </div>
+
+    </div>
+</div>
+    <div class="a-row">
+<div class="ex1 js-fill-50">
+    <h1>Demonstrating the Margins and Width</h1>
+    <p>This grey div has been given a margin value of 5 and a width percentage(of the parent element) of 50. So the whole div will have a width of 50% of the parent element (in this case, the white box) and it will have a margin of 20px all around.</p>
+</div>
+    </div>
+    <div class = "a-row">
+        <div class="tips">
+            <h1>Tips on Usage</h1>
+            <ul>
+<li>Using the window resize event handler allows the function to compensate for new window sizes.</li>
+                <li>Having all of your divs enclosed in a container with a width of 100% allows your divs that are resizing with the window to be flexible as well.</li>
+<li>If you want to select a certain type of object such as all h1 elements on a page, put the .fill() function inside the arguments for the .each() function. </li>
+            </ul>
+        </div>
+    </div>
+    <div class="a-row clearfix">
+        <div class="textArea">
+            <h1>Here is a Text Area</h1>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div class="images">
+            <h1>Programming</h1>
+            <img src="img/coding-jokes.jpg" class="img-responsive">
+        </div>
+    </div>
+    <div class="a-row">
+        <div class="table-holder">
+            <h1>Table's Table for Tabling</h1>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+        </div>
+    </div>
+</div>
+</body>
+<script type = "text/javascript" src ="bower_components/jQuery/dist/jquery.js"></script>
+<script type = "text/javascript" src = "fill.js"></script>
+<script>
+    $(document).ready(function(){
+        filler();
+    });
+    $(window).resize(function(){
+       filler();
+
+    });
+    function filler(){
+        $(".js-fill-45").fill( { margin: 15, percentage: 45 } );
+        $(".js-fill-50").fill({ margin: 15, percentage: 50 });
+        $("#demo").fill({percentage: 15});
+        $('h1').fill({margin:5});
+        $(".theInput").fill({margin:5});
+        $(".tips").fill({margin:15});
+        $(".textArea").fill({percentage:45});
+        $(".images").fill({percentage:45});
+        $(".table-holder").fill({percentage:84, margin:20});
+
+    }
+</script>
+</html>

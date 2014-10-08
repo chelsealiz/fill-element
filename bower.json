@@ -1,0 +1,26 @@
+{
+  "name": "fill-element",
+  "version": "0.0.0",
+  "authors": [
+    "overstreetce <ceo4jq@virginia.edu>"
+  ],
+  "description": "Uses the width of the parent element to set a width for the selected element",
+  "main": "fill.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "fill"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.1"
+  }
+}
