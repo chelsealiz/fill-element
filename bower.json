@@ -11,7 +11,7 @@
     "fill"
   ],
   "license": "MIT",
-  "private": false,
+  "private": "false",
   "ignore": [
     "**/.*",
     "node_modules",
