@@ -1,0 +1,33 @@
+{
+    "name": "fill-element",
+    "version": "1.0.0",
+    "title": "fill-element",
+    "author": {
+        "name": "Chelsea Overstreet",
+        "email": "overstreetchelsea@gmail.com",
+        "url": "github.com/overstreetce"
+    },
+    "description": "Uses the width of the parent element to set a width for the selected element",
+    "main": "fill.js",
+    "keywords": [
+        "jquery",
+        "plugin",
+        "fill"
+    ],
+    "licenses": [{
+      "type": "MIT",
+      "url":  "https://github.com/overstreetce/fill-element/blob/master/LICENSE.txt"
+    }
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.1"
+    },
+    "homepage": "https://github.com/overstreetce/fill-element"
+}

@@ -1,14 +1,13 @@
 {
   "name": "fill-element",
-  "version": "1.0",
+  "version": "1.0.0",
+  "homepage": "https://github.com/overstreetce/fill-element",
   "authors": [
     "overstreetce <ceo4jq@virginia.edu>"
   ],
-  "description": "Uses the width of the parent element to set a width for the selected element",
+  "description": "Add widths to elements so that they fill their parent element",
   "main": "fill.js",
   "keywords": [
-    "jquery",
-    "plugin",
     "fill"
   ],
   "license": "MIT",
@@ -18,9 +17,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "jQuery": "~2.1.1"
-  },
-  "homepage": "https://github.com/overstreetce/fill-element"
+  ]
 }
